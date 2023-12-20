@@ -9,19 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        white: "#FFFFFF",
-        darkorange: {
-          "100": "#fb8b24",
-          "200": "#FB8B24",
-          "300": "#fb7a24",
+        white: "#fff",
+        gainsboro: {
+          "100": "rgba(217, 217, 217, 0.6)",
+          "200": "rgba(217, 217, 217, 0.3)",
         },
         black: "#000",
-        gainsboro: {
-          "100": "#d9d9d9",
-          "200": "rgba(217, 217, 217, 0.6)",
+        lightseagreen: {
+          "100": "#0abab5",
+          "200": "rgba(10, 186, 181, 0.1)",
         },
         darkslategray: "#36454f",
-        linen: "#faf0e6",
+        powderblue: {
+          "100": "#b0e0e6",
+          "200": "rgba(176, 224, 230, 0.2)",
+        },
       },
       spacing: {},
       fontFamily: {

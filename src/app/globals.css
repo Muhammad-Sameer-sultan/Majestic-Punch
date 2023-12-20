@@ -14,7 +14,7 @@
 }
 
 /* Chrome, Edge and Safari */
-/* 
+
 *::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -43,8 +43,8 @@
 
 *::-webkit-scrollbar-thumb:active {
   @apply bg-lightseagreen-100
-} */
-/* 
+}
+
 @layer components {
   .bg-gradient{
     @apply bg-gradient-to-r from-[rgba(251,140,36,0.41)] via-[#F8F8F9] to-[#F8F8F9]
@@ -69,4 +69,4 @@
   .new_height{
     height: 480px;
   }
-} */
+} 
