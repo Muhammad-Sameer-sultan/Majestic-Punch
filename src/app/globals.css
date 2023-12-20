@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +14,7 @@
 }
 
 /* Chrome, Edge and Safari */
+/* 
 *::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -32,28 +34,28 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  @apply bg-darkorange-200 
+  @apply bg-lightseagreen-200 
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  @apply bg-darkorange-200
+  @apply bg-lightseagreen-200
 }
 
 *::-webkit-scrollbar-thumb:active {
-  @apply bg-darkorange-100
-}
-
+  @apply bg-lightseagreen-100
+} */
+/* 
 @layer components {
   .bg-gradient{
     @apply bg-gradient-to-r from-[rgba(251,140,36,0.41)] via-[#F8F8F9] to-[#F8F8F9]
   }
 
   .nav-links{
-    @apply relative font-poppins capitalize w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-darkorange-200 after:w-[24px] after:rounded-[20px] text-lg after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:left-[30%] hover:text-darkorange-200 
+    @apply relative font-poppins capitalize w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightseagreen-200 after:w-[24px] after:rounded-[20px] text-lg after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:left-[30%] hover:text-lightseagreen-200 
   }
 
   .nav-active{
-    @apply relative font-poppins capitalize text-darkorange-200  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-darkorange-200 after:w-[24px] after:scale-x-100 after:left-[30%]
+    @apply relative font-poppins capitalize text-lightseagreen-200  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightseagreen-200 after:w-[24px] after:scale-x-100 after:left-[30%]
   }
 
   .nav{
@@ -67,4 +69,4 @@
   .new_height{
     height: 480px;
   }
-}
+} */
