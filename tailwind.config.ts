@@ -59,7 +59,8 @@ const config: Config = {
       'lg': '1024px',
       'xslg': '1100px',
       'xl':'1280px',
-      'xlg': '1250px'
+      'xlg': '1250px',
+      'xxlg': '1400px',
     }
   },
 

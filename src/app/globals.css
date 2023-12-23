@@ -6,6 +6,7 @@
 @tailwind utilities;
 *{
   @apply p-0 m-0 box-border;
+  /* background-color: #36454f; */
 }
 * {
   scrollbar-width: thin;
@@ -34,15 +35,15 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  @apply bg-lightseagreen-200 
+  @apply bg-lightseagreen-100 
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  @apply bg-lightseagreen-200
+  @apply bg-lightseagreen-100
 }
 
 *::-webkit-scrollbar-thumb:active {
-  @apply bg-lightseagreen-100
+  @apply bg-lightseagreen-200
 }
 
 @layer components {

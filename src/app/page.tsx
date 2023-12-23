@@ -8,9 +8,9 @@ import Services from "@/components/Services";
 export default function Home() {
   return (
   <>
-  <h1 className="bg-red-500">ok</h1>
   {/* <Main /> */}
-  {/* <Hero />
+  <Hero />
+  {/* 
   <About />
   <Services />
   <Pricing />
