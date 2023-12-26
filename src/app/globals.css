@@ -52,11 +52,11 @@
   }
 
   .nav-links{
-    @apply relative font-poppins capitalize w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightseagreen-200 after:w-[24px] after:rounded-[20px] text-lg after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:left-[30%] hover:text-lightseagreen-200 
+    @apply relative font-poppins capitalize w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightseagreen-100 after:w-[24px] after:rounded-[20px] text-lg after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:left-[30%] hover:text-lightseagreen-100 
   }
 
   .nav-active{
-    @apply relative font-poppins capitalize text-lightseagreen-200  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightseagreen-200 after:w-[24px] after:scale-x-100 after:left-[30%]
+    @apply relative font-poppins capitalize text-lightseagreen-100  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightseagreen-100 after:w-[24px] after:scale-x-100 after:left-[30%]
   }
 
   .nav{
@@ -71,3 +71,7 @@
     height: 480px;
   }
 } 
+/* Add this to your styles (CSS) */
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}

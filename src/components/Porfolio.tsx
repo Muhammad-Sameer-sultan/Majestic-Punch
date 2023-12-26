@@ -1,63 +1,91 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useState } from "react";
+import Slider from "./Slider";
+import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
+
+const portfolioImages = [
+  { images: "/Rectangle 24.svg" },
+  { images: "/Rectangle 21.svg" },
+  { images: "/Rectangle 22.svg" },
+  { images: "/Rectangle 23.svg" },
+  { images: "/Rectangle 24.svg" },
+  { images: "/Rectangle 24.svg" },
+  { images: "/Rectangle 24.svg" },
+  { images: "/Rectangle 24.svg" },
+  { images: "/Rectangle 24.svg" },
+];
 
 const Porfolio = () => {
+  const [view, changeView] = useState(false);
+  const [transitionClass, setTransitionClass] = useState("opacity-1 ease");
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleClick = () => {
+    setTransitionClass("opacity-0");
+    setTimeout(() => {
+      setTransitionClass("opacity-1");
+    }, 150);
+
+    changeView(!view);
+  };
+  const handlePrevClick = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollLeft -= containerRef.current.offsetWidth;
+    }
+  };
+  const handleNextClick = () => {
+    if (containerRef.current) {
+          console.log(containerRef.current.offsetWidth)
+      console.log(containerRef.current.scrollLeft)
+
+      containerRef.current.scrollLeft += containerRef.current.offsetWidth;
+      console.log("scrollLeft Final",containerRef.current.scrollLeft)
+    }
+  };
   return (
     <section
-      id="services"
-      className="my-10 py-16  max-sm:px-4 px-20  text-black  font-poppins"
+      id="about"
+      className="relative py-14 grid place-items-center max-sm:px-4 px-20 max-lg:text-[30px]        max-xl:text-[40px] text-[50px] text-black font-work-sans"
     >
-      <div className="flex justify-between max-md:gap-10 max-md:mx-[30px]   my-8  items-center  ">
-        <div className="">
-          <div className="mb-3 text-darkorange-200 uppercase font-semibold">
-            gallery
-          </div>
-          <h2 className="m-0 w-[600px] text-[48px] max-sm:text-[30px] max-lg:text-[38px] leading-[45px] uppercase font-black font-work-sans ">
-            oUR STUNNING PORTFOLIO
-            <Image width={40} height={40} className=" inline-block ms-5 w-[40px] h-[40px]" alt="" src="/star-6.svg" />
+      <div className="flex justify-between max-slg:flex-col items-center max-slg:text-center">
+        <div className="slg:w-1/2">
+          <h2 className=" leading-[60px] max-lg:leading-10 uppercase font-black mb-5">
+            our stunning portfolio
           </h2>
-          <button className="mt-5 cursor-pointer max-slg:text-[10px] text-[16px] hover:bg-darkorange-300 hover:shadow-md    font-poppins text-white [border:none]  py-2 px-[20px] bg-darkorange-100  rounded-26xl">
-            order Now
-          </button>
         </div>
-        <div className=" w-[420px] text-[12px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,
+
+        <div className="text-base  font-poppins max-slg:mt-10 max-slg:w-full w-1/3">
+          <h5>
+            {" "}
+            Explore the creation of Embroidery Digitizing to experience the
+            ultimate artistry of our versatile digitizers.
+          </h5>
+          <div className=" flex gap-4 justify-end mb-7 ">
+            <FaCircleChevronLeft
+              className="cursor-pointer text-33xl text-lightseagreen-100  hover:bg-lightseagreen-100 hover:text-white active:text-lightseagreen-200  rounded-full max-md:w-[30px] max-sm:mx-auto"
+              onClick={handlePrevClick}
+            />
+            <FaCircleChevronRight
+              className="cursor-pointer text-33xl text-lightseagreen-100  hover:bg-lightseagreen-100 hover:text-white active:text-lightseagreen-200  rounded-full max-md:w-[30px] max-sm:mx-auto"
+              onClick={handleNextClick}
+            />
+          </div>
         </div>
       </div>
-      <div className="flex gap-4  overflow-hidden overflow-x-scroll ">
-      <img
-        className=" rounded-xl w-96 h-[450px] object-cover"
-        alt=""
-        src="/rectangle-21@2x.png"
-      />    
-      <img
-        className=" rounded-xl w-96 h-[450px] object-cover"
-        alt=""
-        src="/rectangle-21@2x.png"
-      />    
-      <img
-        className=" rounded-xl w-96 h-[450px] object-cover"
-        alt=""
-        src="/rectangle-21@2x.png"
-      />    
-      <img
-        className=" rounded-xl w-96 h-[450px] object-cover"
-        alt=""
-        src="/rectangle-21@2x.png"
-      />    
-      <img
-        className=" rounded-xl w-96 h-[450px] object-cover"
-        alt=""
-        src="/rectangle-21@2x.png"
-      />    
-      <img
-        className=" rounded-xl w-96 h-[450px] object-cover"
-        alt=""
-        src="/rectangle-21@2x.png"
-      />    
-        </div>
+
+      <div ref={containerRef} className="flex gap-4 scroll-container overflow-x-scroll   mt-5 ">
+        {portfolioImages.map((img, index) => (
+          <Image
+            src={img.images}
+            key={index}
+            alt={img.images}
+            width={250}
+            height={300}
+            className=" object-cover w-72 rounded-lg"
+          />
+        ))}
+      </div>
     </section>
   );
 };
