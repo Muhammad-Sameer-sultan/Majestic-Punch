@@ -26,7 +26,7 @@ const Hero = () => {
           </h2>
           <p className="text-base leading-[28px] font-poppins mb-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industrys standard dummy text
             ever since the 1500s
           </p>
           <ButtonMain Btntext="get a quote" path='#subcribe' />

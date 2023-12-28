@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
-import Slider from "./Slider";
+import React, { useRef} from "react";
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import ButtonMain from "./ButtonMain";
 
@@ -32,7 +31,6 @@ const Porfolio = ({bgshow=true}:any) => {
   const handleNextClick = () => {
     if (containerRef.current && containerImg.current) {
       containerRef.current.scrollLeft += containerImg.current.offsetWidth;
-      console.log(containerImg.current.offsetWidth);
     }
   };
   return (
