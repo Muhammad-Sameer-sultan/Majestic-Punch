@@ -11,27 +11,27 @@ const MobileNav = () => {
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
-    setNavClassName(showMenu ? "nav" : "nav new_height fixed");
+    setNavClassName(showMenu ? "nav relative" : "nav new_height fixed ");
   };
   const navItems = [
-    { id: "#", label: "Home" },
-    { id: "#services", label: "services" },
-    { id: "#pricing", label: "pricing" },
-    { id: "#porfolio", label: "porfolio" },
-    { id: "#about-us", label: "about us" },
+    { id: '/', label: 'Home' },
+    { id: '/services', label: 'services' },
+    { id: '/pricing', label: 'pricing' },
+    { id: '/portfolio', label: 'porfolio' },
+    { id: '/about', label: 'about us' },
   ];
   return (
     <nav
-      className={`slg:hidden px-[72px] pt-[20px] max-xmd:p-[20px] h-[65px] ${navClassName}  bg-gradient z-[150] `}
+      className={` slg:hidden px-[72px] pt-[20px] max-xmd:p-[20px] h-[65px] ${navClassName}  bg-gradient z-[150] `}
     >
       <div className="flex justify-between items-center">
         <div>
           <Image
             className="w-[150px]"
-            src="footerlogo.svg"
+            src="/next.svg"
             width={0}
             height={0}
-            alt="quick pay logo"
+            alt="Majestic punch logo"
           />
         </div>
         <div className="text-darkorange-200 text-[32px] max-xsm:text-[24px] xlg:hidden cursor-pointer">
@@ -50,7 +50,7 @@ const MobileNav = () => {
         </div>
       </div>
       <div
-        className={`flex flex-col justify-center items-center ${
+        className={`absolute top-16 left-0 right-0 flex flex-col justify-center items-center bg-white pb-4 ${
           showMenu ? "flex" : "hidden"
         } gap-6`}
       >

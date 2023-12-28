@@ -10,7 +10,7 @@
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: #ff4d30 #ffffff;
+  scroll-behavior: smooth;
   
 }
 
@@ -47,9 +47,7 @@
 }
 
 @layer components {
-  .bg-gradient{
-    @apply bg-gradient-to-r from-[rgba(251,140,36,0.41)] via-[#F8F8F9] to-[#F8F8F9]
-  }
+
 
   .nav-links{
     @apply relative font-poppins capitalize w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-lightseagreen-100 after:w-[24px] after:rounded-[20px] text-lg after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:left-[30%] hover:text-lightseagreen-100 
@@ -60,7 +58,7 @@
   }
 
   .nav{
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(255, 255, 255, 1);
     left: 0;
     top: 0;
     right: 0;

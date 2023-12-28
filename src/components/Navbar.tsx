@@ -7,11 +7,11 @@ const Navbar = () => {
  
 
   const navItems = [
-    { id: '#', label: 'Home' },
-    { id: '#services', label: 'services' },
-    { id: '#pricing', label: 'pricing' },
-    { id: '#porfolio', label: 'porfolio' },
-    { id: '#about-us', label: 'about us' },
+    { id: '/', label: 'Home' },
+    { id: '/services', label: 'services' },
+    { id: '/pricing', label: 'pricing' },
+    { id: '/portfolio', label: 'porfolio' },
+    { id: '/about', label: 'about us' },
   ];
   const handleNavClick = (id:string) => {
     setActiveNav(id);
@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className='bg-white h-[100px] px-[72px] flex justify-between items-center max-xmd:p-[20px] max-slg:hidden'>
       <div>
-      <Image className='w-full' src={"footerlogo.svg"} width={0} height={100} alt="logo here"/>
+      <Image className='' src={"next.svg"} width={200} height={200} alt="logo here"/>
       </div>
       <ul className='nav-bar flex gap-8 font-semibold text-[#1D1C1C] text-lg'>
       {navItems.map((item) => (

@@ -35,17 +35,18 @@ const serviceItems = [
   },
 ];
 
-const Services = () => {
+const Services = ({showbg,displayTitleBtn=true}:any) => {
   return (
     <section
       id="about"
-      className="pt-0 bg-lightseagreen-200 relative py-14 grid place-items-center max-sm:px-4 px-20 max-lg:text-[30px]        max-xl:text-[40px] text-[50px] text-black font-work-sans"
+      className={`${showbg? "bg-lightseagreen-200":"" } pt-0  relative py-14 grid place-items-center max-sm:px-4 px-20 max-lg:text-[30px]        max-xl:text-[40px] text-[50px] text-black font-work-sans`}
     >
-      <div className="flex justify-between max-slg:flex-col items-center max-slg:text-center">
+      <div className="flex justify-between max-slg:flex-col max-slg:items-center items-start max-slg:text-center">
         <div>
-          <h2 className=" leading-[60px] max-lg:leading-10 uppercase font-black mb-5">
+          <h2 className=" leading-[60px] max-lg:leading-10  uppercase font-black mb-5">
             our services
           </h2>
+          <ButtonMain display={displayTitleBtn}  Btntext='Read more' path='services' />
         </div>
         <div className="text-base  font-poppins max-slg:mt-10 max-slg:w-full w-1/3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem

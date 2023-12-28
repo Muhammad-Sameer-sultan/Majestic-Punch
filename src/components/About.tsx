@@ -14,7 +14,7 @@ const About = () => {
     <h2 className=" leading-[60px] max-lg:leading-10 uppercase font-black mb-5">
               About us
             </h2>
-            <ButtonMain Btntext="Read more"/>
+            <ButtonMain Btntext="Read more" path='about'/>
     </div>
     <div className="text-base font-poppins max-slg:mt-10 max-slg:w-full w-1/3">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem debitis qui asperiores reprehenderit sapiente repudiandae? Dicta ipsum dolorem esse optio exercitationem error cumque eius, quas est saepe eveniet consequuntur?
