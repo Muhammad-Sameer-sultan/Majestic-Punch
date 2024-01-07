@@ -13,6 +13,7 @@ const navItems = [
   { id: '/pricing', label: 'pricing' },
   { id: '/portfolio', label: 'porfolio' },
   { id: '/about', label: 'about us' },
+  { id: '/contact-us', label: 'contact us' },
 ];
 const Footer = () => {
   return (
