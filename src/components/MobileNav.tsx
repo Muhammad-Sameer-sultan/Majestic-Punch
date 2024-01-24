@@ -28,10 +28,10 @@ const MobileNav = () => {
       <div className="flex justify-between items-center">
         <div>
           <Image
-            className="w-[150px]"
-            src="/next.svg"
-            width={0}
-            height={0}
+            className=""
+            src="/logo.svg"
+            width={200}
+            height={50}
             alt="Majestic punch logo"
           />
         </div>

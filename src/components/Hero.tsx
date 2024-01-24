@@ -25,9 +25,7 @@ const Hero = () => {
             Unlocking Innovation through Digital Evolution.
           </h2>
           <p className="text-base leading-[28px] font-poppins mb-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s
+          Transforming Dreams into reality. Where Every Thread Weaves Your Imagination
           </p>
           <ButtonMain Btntext="get a quote" path='#subcribe' />
           <div className="mt-24 w-full slg:w-80 font-poppins">
