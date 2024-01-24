@@ -17,10 +17,7 @@ const Pricing = () => {
           <ButtonMain Btntext="Read more" path='pricing' />
         </div>
         <div className="text-base  font-poppins max-slg:mt-10 max-slg:w-full w-1/3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem
-          debitis qui asperiores reprehenderit sapiente repudiandae? Dicta ipsum
-          dolorem esse optio exercitationem error cumque eius, quas est saepe
-          eveniet consequuntur?
+        Embark on your creative journey with Majestic Punch! Enjoy a Spectacular 50% Discount on Your First Order. Immerse yourself in high-quality embroidery and digitizing services tailored to your unique vision. Don't miss this chance to elevate your projects with precision and artistry. Place your order now and experience the Majestic Punch difference!
         </div>
       </div>
 

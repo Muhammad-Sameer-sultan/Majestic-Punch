@@ -6,32 +6,32 @@ const serviceItems = [
   {
     img: "/service1.svg",
     title: "logo embroidery digitizing",
-    description: dummy,
+    description: "Your brand is unique, and so is your logo. Our skilled digitizers ensure that every detail, color, and element of your logo is accurately translated into the.....",
   },
   {
     img: "/service2.svg",
     title: "cap embroidery digitizing",
-    description: dummy,
+    description: "Embroidering on caps and left chest requires unique considerations. Our digitization process is tailored to this specific area, maintaining precision and....",
   },
   {
     img: "/service3.svg",
     title: "jacket back embroidery digitizing",
-    description: dummy,
+    description: "When it comes to Jacket Back Embroidery Digitizing, Majestic Punch offers specialized services to ensure that your designs are translated seamlessly onto.....",
   },
   {
     img: "/service4.svg",
     title: "left chest embroidery digitizing",
-    description: dummy,
+    description: "When it comes to Jacket Back Embroidery Digitizing, Majestic Punch offers specialized services to ensure that your designs are translated seamlessly onto.....",
   },
   {
     img: "/service5.svg",
     title: "3d puff embroidery digitizing",
-    description: dummy,
+    description: "3D Puff Embroidery Digitizing is a specialized technique that adds dimension and texture to embroidered designs, creating a raised or 'puffed' effect.....",
   },
   {
     img: "/service6.svg",
     title: "color separation",
-    description: dummy,
+    description: "At Majestic Punch, our Color Separation services are a testament to precision, versatility, and uncompromising quality. Achieving precise color matching....",
   },
 ];
 
@@ -49,10 +49,7 @@ const Services = ({showbg,displayTitleBtn=true}:any) => {
           <ButtonMain display={displayTitleBtn}  Btntext='Read more' path='services' />
         </div>
         <div className="text-base  font-poppins max-slg:mt-10 max-slg:w-full w-1/3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem
-          debitis qui asperiores reprehenderit sapiente repudiandae? Dicta ipsum
-          dolorem esse optio exercitationem error cumque eius, quas est saepe
-          eveniet consequuntur?
+        We believe in customer satisfaction. Our customer-centric approach includes dedicated 24/7 support ensuring that each of our service is a masterpiece that exceeds customer expectations.
         </div>
       </div>
 

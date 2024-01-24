@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -20,7 +21,7 @@ const Footer = () => {
     <footer className="bg-darkslategray px-[38px] pt-10 pb-5 text-white font-poppins">
       <div className="grid grid-cols-4 max-lg:gri items-center justify-center gap-[16px] ">
         <div className="p-5 max-lg:col-span-4 max-lg:text-center">
-          <h4 className="uppercase   text-[36px] font-work-sans">Logo here</h4>
+        <Image className='' src={"logo.svg"} width={250} height={200} alt="logo here"/>
           <p className="text-[12px] text-[rgba(255,255,255,0.5)] mt-3 leading-5">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id tempora
             quisquam ullam mollitia odit dolore libero provident odio reiciendis

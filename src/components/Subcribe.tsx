@@ -57,14 +57,14 @@ const Subcribe = () => {
           //  value={formData.name} onChange={handleChange}
           type="text"
           placeholder="Your Name"
-          className="bg-gainsboro-200 focus:outline-lightseagreen-100 rounded-full p-3"
+          className="bg-gainsboro-200 focus:outline-lightseagreen-100 rounded-full p-3 ps-4"
         />
         <input
           name="email"
           // value={formData.email} onChange={handleChange}
           type="email"
           placeholder="Email Address"
-          className="bg-gainsboro-200 focus:outline-lightseagreen-100 rounded-full p-3 "
+          className="bg-gainsboro-200 focus:outline-lightseagreen-100 rounded-full p-3 ps-4"
         />
 
         <div className="max-md:col-span-2 max-xmd:col-span-1 grid place-items-center">

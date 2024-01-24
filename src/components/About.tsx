@@ -9,7 +9,7 @@ const About = () => {
       id="about"
       className="mt-14 relative py-14 grid place-items-center max-sm:px-4 px-20 max-lg:text-[30px]      max-slg:text-center  max-xl:text-[40px] text-[50px] text-black font-work-sans"
     >
-      <div className="absolute bg-lightseagreen-200 h-[40%] w-full z-[-1] bottom-0"></div>
+      <div className="absolute bg-lightseagreen-200 h-[65%] w-full z-[-1] bottom-0"></div>
       <div className="flex justify-between max-slg:flex-col items-center">
         <div>
           <h2 className=" leading-[60px] max-lg:leading-10 uppercase font-black mb-5">
@@ -33,7 +33,7 @@ const About = () => {
           src="/about1.svg"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3  justify-center items-center  gap-5 mt-10 p-2">
+      <div className="grid grid-cols-1 slg:grid-cols-3  justify-center items-center  gap-5 mt-10 p-2">
         <div className="border border-gainsboro-100 p-5 rounded  h-fit">
           <h2 className="text-[20px] capitalize mb-2">TURNAROUND TIME</h2>
           <p className="text-[14px] font-poppins">
